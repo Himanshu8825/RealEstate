@@ -10,6 +10,7 @@ import PrivateRoute from "./components/PriveteRoute";
 import CreateListing from "./pages/CreateListing";
 import UpdateListing from "./pages/UpdateListing";
 import Listing from "./pages/Listing";
+import Seacrh from "./pages/Seacrh.jsx";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/sign-in" element={<Sigin />} />
         <Route path="/sign-up" element={<Signup />} />
         <Route path="/about" element={<About />} />
+        <Route path="/search" element={<Seacrh />} />
         <Route path="/listing/:listingId" element={<Listing />} />
         <Route element={<PrivateRoute />}>
           <Route path="/profile" element={<Profile />} />
